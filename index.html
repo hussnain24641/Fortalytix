@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fortalytix – Data‑Driven Growth</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom Tailwind config for brand colours -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            beige: '#F5F3EC',
+            navy: '#0A1A2A',
+            navyLight: '#132337',
+          },
+          boxShadow: {
+            '3d': '0 40px 60px -10px rgba(10,26,42,0.45)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* extra 3D card effect */
+    .card-3d {
+      transition: transform 400ms ease, box-shadow 400ms ease;
+      transform-style: preserve-3d;
+    }
+    .card-3d:hover {
+      transform: rotateX(6deg) rotateY(-6deg) translateY(-4px);
+      box-shadow: 0 45px 70px -15px rgba(10,26,42,0.55);
+    }
+  </style>
+</head>
+<body class="font-sans antialiased bg-beige text-navyLight">
+  <!-- Hero Section -->
+  <header class="relative overflow-hidden min-h-screen flex flex-col items-center justify-center text-center px-6 py-16 bg-gradient-to-br from-beige via-[#d6d1c6] to-navy">
+    <!-- Decorative blurred blob -->
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-navy rounded-full blur-3xl opacity-40"></div>
+    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-beige drop-shadow-2xl mb-6">
+      Turn Your Data<br class="hidden md:inline"/>Into Decisions
+    </h1>
+    <p class="text-beige/90 max-w-xl mx-auto md:text-lg mb-8">
+      Fortalytix empowers startups & ecommerce brands with premium dashboards, predictive analytics, and bullet‑proof data strategy.
+    </p>
+    <a href="#contact" class="inline-block bg-beige text-navy font-semibold px-8 py-3 rounded-full shadow-3d hover:shadow-lg hover:-translate-y-1 transition-all">
+      Book Free Consultation
+    </a>
+  </header>
+
+  <!-- About Section -->
+  <section class="py-20 px-6 max-w-6xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-navy">About Fortalytix</h2>
+    <p class="max-w-3xl mx-auto text-center text-lg text-navy/80">
+      We transform messy data into crystal‑clear insights and stunning 3D‑infused dashboards. Our mission is simple: enable you to act on data with confidence, speed, and style.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="bg-gradient-to-br from-beige via-[#ebe7de] to-beige py-20 px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-navy mb-12">Our Services</h2>
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+      <!-- Service Card -->
+      <div class="card-3d bg-white/80 backdrop-blur-lg rounded-2xl p-6 shadow-3d">
+        <h3 class="text-xl font-semibold mb-2">🔍 Data Cleaning</h3>
+        <p class="text-navy/70">Remove duplicates, repair missing values, and prepare your data for prime‑time analytics.</p>
+      </div>
+      <div class="card-3d bg-white/80 backdrop-blur-lg rounded-2xl p-6 shadow-3d">
+        <h3 class="text-xl font-semibold mb-2">📊 Interactive Dashboards</h3>
+        <p class="text-navy/70">Power BI & Tableau dashboards with subtle 3D hover motions that make numbers come alive.</p>
+      </div>
+      <div class="card-3d bg-white/80 backdrop-blur-lg rounded-2xl p-6 shadow-3d">
+        <h3 class="text-xl font-semibold mb-2">📈 Trend Analysis</h3>
+        <p class="text-navy/70">Spot revenue drifts and growth pockets faster than ever with advanced visual analytics.</p>
+      </div>
+      <div class="card-3d bg-white/80 backdrop-blur-lg rounded-2xl p-6 shadow-3d">
+        <h3 class="text-xl font-semibold mb-2">🔮 Predictive Insights</h3>
+        <p class="text-navy/70">From churn risk to sales forecasts—ML models wrapped in elegant 3D‑style presentations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-24 px-6 max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-10 text-navy">How It Works</h2>
+    <div class="grid gap-8 md:grid-cols-3">
+      <div class="card-3d bg-beige rounded-xl p-6 shadow-3d">
+        <h3 class="font-semibold text-lg mb-2">1️⃣ Share Data</h3>
+        <p class="text-navy/80">Connect spreadsheets, databases, or APIs.</p>
+      </div>
+      <div class="card-3d bg-beige rounded-xl p-6 shadow-3d">
+        <h3 class="font-semibold text-lg mb-2">2️⃣ We Analyze</h3>
+        <p class="text-navy/80">Cleaning, modelling, & dashboard‑crafting with 3D flair.</p>
+      </div>
+      <div class="card-3d bg-beige rounded-xl p-6 shadow-3d">
+        <h3 class="font-semibold text-lg mb-2">3️⃣ Get Insights</h3>
+        <p class="text-navy/80">Interactive reports + strategic next steps to boost ROI.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="relative overflow-hidden py-24 bg-gradient-to-br from-navy via-navyLight to-[#0e2740] text-beige text-center px-6">
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-beige rounded-full blur-3xl opacity-30"></div>
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Elevate Your Data?</h2>
+    <p class="max-w-2xl mx-auto mb-8 text-beige/90">Schedule a free strategy call or drop us a message—let’s craft your competitive edge.</p>
+    <a href="mailto:fortalytix@gmail.com" class="inline-block bg-beige text-navy font-semibold px-8 py-3 rounded-full shadow-3d hover:shadow-lg hover:-translate-y-1 transition-all">
+      Contact Us
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-8 text-sm bg-navy text-beige/70">
+    © 2025 Fortalytix. All Rights Reserved.
+  </footer>
+</body>
+</html>
